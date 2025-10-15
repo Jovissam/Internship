@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#traffic-highway{
+    width: 100%;
+    height: 550px;
+    background: url(background.webp);
+    background-size: cover;
+    background-position: center 100%;
+}
+.traffic{
+    width: 100px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 150px;
+}
+.traffic .light{
+    width: 80px;
+    height: 160px;
+    padding: 6px 0;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.traffic .light .sign{
+    width: 40px; height: 40px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: gray;
+}
+.traffic .light .red{animation: red 2s;}
+.traffic .light .yellow{animation: yellow 3s 2s;}
+.traffic .light .green{animation: green 3s 5s;}
+                    /* traffic light keyframe */
+@keyframes red{
+    from{
+            background-color: red;
+    }
+    to{
+            background-color: gray;
+    }
+    
+}
+@keyframes yellow{
+    from{
+            background-color: gray;
+    }
+    to{
+            background-color: orange;
+    }
+}
+@keyframes green{
+    from{
+            background-color: gray;
+    }
+    to{
+            background-color: green;
+    }
+}
+.traffic .pole{
+    width: 20px;
+    height: 250px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 0 0 5px 5px;
+}
+.road{
+    width: 99.5%;
+    height: 150px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 390px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.road .car{
+    /* background-color: pink; */
+    position: absolute;
+    margin-left: -1000px;
+    height: 150px;
+    width: 500px;
+    animation: moving-car 4s ease-in 7s;
+}
+.road .car img{
+    width: 400px;
+    position: absolute;
+}
+.road .car .wheel{
+    width: 55px;
+    height: 55px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top:42%;
+    left: 62px;
+}
+.road .car .wheel:nth-child(2){
+    left: 310px;
+    top: 39.5%;
+}
+.road .car .wheel .rim:nth-child(1){
+    width: 5px;
+    height: 55px;
+    left: 45%;
+    background-color: whitesmoke;
+    position: absolute;
+    animation: rim 4s ease-in 7s ;
+}
+.wheel .rim:nth-child(2){
+    width: 5px;
+    height: 55px;
+    left: 45%;
+    background-color: whitesmoke;
+    position: absolute;
+    transform: rotate(90deg);
+    animation: rim2 4s ease-in 7s;
+}
+                /* WHEEL MOVEMENT */
+@keyframes rim {
+    from{transform: 0;}
+    to{transform: rotate(-5000deg);}
+}
+@keyframes rim2 {
+    from{ transform: rotate(180deg);}
+    to{transform: rotate(-4000deg);}
+}
+
+                /* for car movement */
+@keyframes moving-car {
+    0%{
+          right: 0;
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    55%{
+        transform: rotate(0);
+    }
+    100%{
+        right: 1500px;
+    }
+}

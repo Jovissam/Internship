@@ -1,0 +1,65 @@
+/* tablet */
+@media screen and (max-width:1024px) {
+    /* #section-1{padding: 0 20px;} */
+    .pfp{width: 300px;}
+}
+/* small tablet */
+@media screen and (max-width:760px) {
+    #nav .left{
+        flex-direction: row-reverse;
+        width: 50%;
+    }
+    .nav-links button{
+        display: inline;
+        margin-right: 10px;
+    }
+    .navlink{
+        position: absolute;
+        flex-direction: column;
+        top: 60px;
+        width: 130px;
+        height: 300px;
+        align-items: center;
+        border-radius: 0 30px 30px 0;
+        background: #563556;
+        left: -150px;
+        transition: 1s;
+        z-index: 10;
+    }
+    .hideSidebar{
+    left: 0;
+    transition: 1s;
+}
+    .navlink li{
+        padding: 3px 10px;
+        border-radius: 30px;
+        box-shadow:  6px 6px 12px #1b0f1b,
+             -6px -6px 12px #452745;
+    }
+    .display-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left-display{width: 100%;}
+    .pfp{width: 400px;}
+    .work-container{justify-content: center;}
+    .contact{flex-direction: column;}
+    .socials, .contact-container, .contact-form{
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:500px) {
+    .pfp{
+        width: 300px;
+    }
+    #nav .right{padding: 5px 10px;}
+    .work img{
+        width: 300px;
+        height: 200px;
+    }
+    #services, #contact-me{
+        padding: 50px 20px;
+    }
+}

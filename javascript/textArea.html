@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Area</title>
+    <style>
+        div{
+            margin: 20px auto;
+            /* background-color: red; */
+            text-align: center;
+        }
+        textarea{
+            width: 250px;
+            height: 150px;
+            margin: 10px auto;
+        }
+        textarea:focus{
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Write An Essay To Your Homie (Not more than 50 words)</h2>
+        <textarea name="" id="textArea" maxlength="50"></textarea>
+        <p id="length"></p>
+    </div>
+
+
+    <script>
+        const textArea = document.querySelector("#textArea")
+        const length = document.querySelector("#length")
+
+        function checkInput() {
+            const inputValue = textArea.value.trim();
+            const inputLength = inputValue.length
+             console.log(inputLength);
+             length.textContent = `${inputLength}/50`;
+
+             if (inputLength > 50) {
+                textArea.style.border = "2px solid red"
+             } else {
+                
+             }
+            
+        }
+        textArea.addEventListener("keyup", checkInput)
+        
+    </script>
+</body>
+</html>

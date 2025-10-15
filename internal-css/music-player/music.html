@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boomplay.com</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main-container{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(137, 103, 254, 1), white);
+            width: 100vw;
+            height: 100vh;
+        }
+        #phone{
+            width: 270px;
+            height: 530px;
+            margin: 0 auto;
+            border-radius: 20px;
+            background-color: #F9F7FF;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        .notification-pannel{
+            font-size: 12px;
+            padding-top: 10px;
+        }
+        .notification-pannel .time{
+            padding: 0 150px 0 20px;
+        }
+                    /* nav */
+        .nav{
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .nav i{
+            border: 1px solid grey;
+            border-radius: 100%;
+            padding: 8px 9px;
+            font-size: 14px;
+        }
+        .nav span{
+            margin-left: 35px;
+            font-weight: bold;
+        }
+        .nav i:nth-child(3){
+            margin-left: 35px;
+            padding: 8px 13px;
+        }
+        .bg-img{
+            background-image: url(resources/cover2.jpeg);
+            background-size: cover;
+            width: 240px;
+            height: 240px;
+            border-radius: 15px;
+            margin: 8px auto;
+        }
+        .name{
+            text-align: center;
+        }
+        .artist-name{
+            text-align: center;
+            font-size: 12px;
+        }
+        .artist-name i{
+            color: #7141FE;
+        }
+        .sound-wave{
+            width: 240px; height: 50px;
+            margin-left: 15px;
+        }
+        .music-time{
+            font-size: 11px;
+            padding-left: 20px;
+        }
+        .music-time span{
+            padding-left: 170px;
+        }
+        .control-panel{
+            padding-top: 5px;
+        }
+        .control-panel img{
+            width: 20px;
+            padding-left: 23px;
+        }
+        .control-panel i{
+            padding: 10px 11px 10px 12px ;
+            color: white;
+            background-color: #7141FE;
+            border-radius: 100%;
+            margin-left: 23px;
+        }
+        .lyrics-box{
+            text-align: center;
+            background-color: #E7E7E7;
+            border-radius: 20px;
+            margin: 8px 3px 0 3px;
+            padding: 4px 8px 8px 8px;
+        }
+        .lyrics-box hr{
+            width: 50px;
+            margin: 0 auto;
+            height: 2px;
+            background-color: black;
+            opacity: 0.3;
+        }
+        .lyrics-box p:nth-child(2){
+            font-weight: bold;
+            opacity: 0.7;
+        }
+        .lyrics-box p:nth-child(3){
+            font-size: 11px;
+        }
+
+    </style>
+</head>
+<body>
+    <main id="main-container">
+        <div id="phone">
+            <div class="notification-pannel">
+                <span class="time">9:41</span>
+                <span>
+                    <i class="fas fa-signal    "></i>
+                    <i class="fas fa-wifi    "></i>
+                    <i class="fas fa-battery-full    "></i>
+                </span>
+            </div>
+            <div class="nav">
+                <a href="music-list.html"><i class="fas fa-arrow-left"></i></a>
+                <span>Podcast Player</span>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+            <div class="bg-img"></div>
+            <h4 class="name">Midnight Music</h4>
+            <p class="artist-name">Echo Music <i class="fas fa-check-circle"></i></p>
+            <img class="sound-wave" src="resources/animation1.gif" alt="">
+            <p class="music-time">02:36 <span>04:52</span></p>
+            <div class="control-panel">
+                <img src="resources/shuffle.svg" alt="">
+                <img src="resources/rewind-back.svg" alt="">
+                <i class="fas fa-play    "></i>
+                <img src="resources/rewind-front.svg" alt="">
+                <img src="resources/loop-1.svg" alt="">
+            </div>
+            <div class="lyrics-box">
+                <hr>
+                <p>lyrics</p>
+                <p>Lorem, ipsum dolor sit amet</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

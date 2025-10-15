@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media not|only mediatype and (media feature)  ) {
+            CSS-Code;
+            } */
+
+        .box {
+            width: 100%;
+            height: 400px;
+            border: 1px solid black;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .green {
+            background-color: greenyellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .first-container {
+            display: flex;
+        }
+
+        .second-container {
+            display: flex;
+        }
+
+        .third-container {
+            display: flex;
+        }
+
+        .forth-container {
+            display: flex;
+        }
+
+        /* Mobile */
+        @media screen and (max-width:1024px) {
+            .first-container {
+                flex-direction: column;
+            }
+
+            .third-container {
+                flex-direction: column;
+            }
+        }
+
+        /* Tab */
+
+        /* Desktop */
+        @media screen and (min-width:1040px) {}
+    </style>
+</head>
+
+<body>
+    <div class="first-container">
+        <div class="box orange"></div>
+        <div class="box orange"></div>
+    </div>
+    <div class="second-container">
+        <div class="box green"></div>
+    </div>
+    <div class="third-container">
+        <div class="box blue"></div>
+        <div class="box blue"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+
+</html>

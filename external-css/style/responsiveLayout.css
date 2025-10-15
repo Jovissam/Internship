@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+}
+.box{
+    width: 99%;
+    height: 100%;
+}
+.left-section{
+    width: 65%;
+    height: 100vh;
+}
+.right-section{
+    width: 32%;
+}
+.nav{
+    height: 10%;
+}
+.footer, .nav, .header{
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.footer{
+    height: 40%;
+}
+.header{
+    height: 40%;
+}
+.big-box{
+    height: 70%;
+    width: 99%;
+    border-bottom: 5px solid white;
+}
+.mini-box{
+    height: 30%;
+    width: 99%;
+    border-top: 5px solid white;
+}
+.green{
+    background-color: green;
+    width: 50%;
+    border-right: 5px solid white;
+}
+.blue{
+    background-color: blue
+}
+.lightBlue{
+    background-color: rgb(57, 124, 165);
+}
+.yellow{
+    background-color: yellow;
+    width: 49%;
+}
+
+     /* for tablet */
+@media screen and (max-width: 1040px) {
+    .nav{
+        flex-direction: column;
+    }
+    .right-section{
+        height: 350px;
+        margin-top: 50px;
+    }
+    .footer1{
+        width: 100%;
+        position: absolute;
+    }
+}
+     /* for mobile phone */
+@media screen and (max-width: 435px) {
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-section, .left-section{
+        padding: 10px;
+        width: 100%;
+    }
+}
+     
+     /* for mobile phone (landscape mode) */
+@media screen and (max-width:940px) {
+    .left-section{
+            flex-direction: column;
+    }
+    .footer, .nav, .header{
+            flex-direction: column;
+    }
+    .footer1{
+        width: 100%;
+        position: relative;
+    }
+    .right-section{
+            height: 100vh;
+    }
+    .yellow{
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+    .foot-box{
+        margin: 5px 0;
+    }
+    .foot-box div:nth-child(1){
+        height: 100px;
+    }
+    .foot-box div:nth-child(2){
+        height: 30px;
+    }
+    .green{
+        width: 100%;
+    }
+}
+        /* for smart watch */
+@media screen and (max-width:230px) {
+    .green{
+        display: none;
+    }
+    /* #big-box1{
+        display: none;
+    } */
+}

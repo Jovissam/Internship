@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hovereffect</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width:  100vw;
+            height: 100vh;
+            background-color: #5B36B5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #hover-box{
+            background-color: white;
+            width: 330px;
+            height: 70px;
+            border-radius: 0 0 20px 20px;
+            margin: 0 auto;
+            padding: 20px 0 0 0px;
+        }
+        .hover{
+            width: 43px; height: 20px;
+            padding: 10px 0;
+            margin-left: 20px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .hover i{
+            font-size: 20px;
+            padding-left: 20px;
+        }
+        .hover span{
+            font-size: 12px;
+            position: absolute;
+            padding: 3px 0 0 5px;
+            font-weight: bold;
+        }
+        .hover:hover{
+            width: 100px;
+            background-color: #DDD6F1;
+        }
+
+        #hover1:hover{
+            color: #5B36B5;
+        }
+        #hover2:hover{
+            background-color: #F4D5EC;
+            color: #C9379D;
+        }
+        #hover3:hover{
+            background-color: #F9EED3;
+            color: #E5A919;
+        }
+        #hover4:hover{
+            background-color: #D0E9ED;
+            color: #1193AA;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div id="hover-box">
+            <div id="hover1" class="hover"><i class="fas fa-home"></i><span>Home</span></div>
+            <div id="hover2" class="hover"><i class="fas fa-heart"></i><span>Likes</span></div>
+            <div id="hover3" class="hover"><i class="fas fa-search"></i><span>Search</span></div>
+            <div id="hover4" class="hover"><i class="fas fa-user"></i><span>Profile</span></div>
+        </div>
+    </main>
+</body>
+</html>

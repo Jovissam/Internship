@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theorem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <main id="main">
+        <h1 class="text-center mb-4">PYTHAGORAS THEOREM</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-4 order-2 order-lg-1">
+                    <div class="input-params text-center">
+                        <p id="feedback">Input any Two of Your Values</p>
+                        <p>
+                            <label for="input-1"><B>AB</B></label>
+                            <input type="text" id="input-1" placeholder="Input AB">
+                        </p>
+                        <p>
+                            <label for="input-2"><B>BC</B></label>
+                            <input type="text" id="input-2" placeholder="Input BC">
+                        </p>
+                        <p>
+                            <label for="input-3"><B>AC</B></label>
+                            <input type="text" id="input-3" placeholder="Input AC">
+                        </p>
+
+                        <p class="text-center">
+                            <button id="calculate">calculate</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 order-1 order-lg-2">
+                    <div class="display-params d-flex justify-content-center align-items-center">
+                        
+                        <div class="triangle">
+                            <h2 class="absolute a1">A</h2>
+                            <h2 class="absolute b1">B</h2>
+                            <h2 class="absolute c1">C</h2>
+
+                            <h4 class="absolute" id="output-1">x</h4>
+                            <h4 class="absolute" id="output-2">y</h4>
+                            <h4 class="absolute" id="output-3">z</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="pythagoras.js"></script>
+</body>
+</html>

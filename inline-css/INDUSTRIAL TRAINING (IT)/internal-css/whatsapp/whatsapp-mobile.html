@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>whatsapp.com</title>
+                  <!-- made by jovis -->
+	<style>
+		#main{
+			background-color:#0B1014; color:white; width:400px; margin:0 auto; font-family:'segoe ui';
+		}
+		#header{
+			display:inline-block; width:395px; position:fixed; background-color:#0B1014;
+			padding:5px 0 30px 5px; border-radius:20px
+		}
+        a{
+            color:white; text-decoration:none
+        }
+		.inline{
+			display: inline-block;
+		}
+        .absolute{
+            position: absolute;
+        }
+        .bold{
+            font-weight: bold;
+        }
+		.title{
+			font-weight:500; font-size:30px
+		}
+		.head-left{
+			margin:-10px 0 0px 90px
+		}
+		.head-cam{
+			padding:12px;
+		}
+					/* group area */
+		#chat-section{
+            height:700px; overflow-y:scroll; top:800px; position:fixed; top:50px; background-color:#0B1014; width:373px; padding:0 15px
+        }
+        .group{
+            padding:15px 0px; font-size:14px; font-weight:450;
+        }
+        .group1{
+            background-color:#23282C; padding:5px 16px; border-radius:50px; margin-left:5px;
+        }
+                        /* chat area */
+        .chat-box{
+            padding:10px 0;  position:relative;
+        }
+        .chat-img{
+            width:45px; height:45px; border-radius:100%
+        }
+        .font-size1{
+            font-size: 12px;
+        }
+        .font-size2{
+            font-size: 14px;
+        }
+        .chat-name1{
+            padding:0 160px 0 50px
+        }
+        .chat-name2{
+          padding:0 130px 0 50px
+        }
+        .chat-name3{
+          padding:0 185px 0 50px
+        }
+        .chat-name4{
+          padding:0 130px 0 50px
+        }
+        .chat-name5{
+          padding:0 110px 0 50px
+        }
+        .chat-name6{
+          padding:0 175px 0 50px
+        }
+        .chat-name7{
+          padding:0 215px 0 50px
+        }
+        .chat-name8{
+          padding:0 195px 0 50px
+        }
+        .chat-name9{
+          padding:0 175px 0 50px
+        }
+        .chat-name10{
+          padding:0 175px 0 50px
+        }
+
+        .chat1{
+          padding:0 110px 0 50px
+        }
+        .chat2{
+          padding:0 110px 0 50px
+        }
+        .chat3{
+          padding:0 0px 0 50px
+        }
+        .chat6{
+          padding:0 75px 0 50px
+        }
+        .chat7{
+          padding:0 75px 0 50px
+        }
+        .chat8{
+          padding:0 75px 0 50px
+        }
+        .chat9{
+           padding:0 75px 0 50px
+        }
+        .chat10{
+          padding:0 180px 0 50px
+        }
+        .unread{
+          background-color:#1DAA61; font-size:14px; padding:0 5px; border-radius:100%
+        }
+        .mute{
+          width:15px; padding-right:4px
+        }
+        .chat-check{
+          width:15px; padding:0 2px 0 50px
+        }
+                    /* newchat */
+        #newchat{
+          position:absolute; padding:20px 20px 15px 20px; background-color:white; margin:600px 0 0 315px; border-radius:10px
+        }
+              /* footer */
+        #footer{
+          position:fixed; margin-top:730px; width:400px; padding:30px 0 0 3px; background-color:#0B1014; text-align:center;
+          border-radius: 20px; z-index: -1;
+        }
+        .footer-boxes{
+          padding-left:60px
+        }
+        .footer-details{
+          padding-top:1px; font-size:13px; font-weight:500
+        }
+
+	</style>
+</head>
+<body style="margin:0">
+ <main id="main">
+  <header id="header">
+     <div>
+	<div class="title inline">WhatsApp</div>
+	<div class="head-left inline">
+	  	<span><span class="head-cam"><img src="resources/camera2.png" width="20px"></span>
+		<span style="padding:12px;margin-left:15px;"><img src="resources/search.png" width="20px"></span>
+		<span class="head-cam"><img src="resources/dots.png" width="20px"></span></span>
+	</div>
+     </div>
+  </header>
+                    <!-- group area -->
+  
+<section id="chat-section">
+ <div class="group">
+	<span class="group1">
+	  <a href="">All</a></span>
+	<span class="group1">
+	  <a href="">Unread</span>
+	<span class="group1">favorites</span>
+	<span class="group1">Groups</span>
+  </div>  
+  			<!-- chat area -->
+        
+
+  <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/grind.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name1">My Shaylaa</span><span class="font-size1">11:27 AM</span><br>
+      <span class="chat1 font-size2">have you eaten anything...</span>
+      <span class="unread">1</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/1.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name2">The Crypto Guy</span><span class="font-size1">11:27 AM</span><br>
+      <span class="chat2 font-size2">joshkind:make sure u...</span>
+      <span><img class="mute" src="resources/bell.png"></span>
+      <span class="unread">1</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/2.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name3">Donaldo</span><span class="font-size1">11:15 AM</span><br>
+      <span class="chat3 font-size2">shey you dey active</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/3.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name4">Darlington(sen)</span><span class="font-size1">10:27 AM</span><br>
+      <span><img class="chat-check" src="resources/checkblue.png"></span>
+      <span class="font-size2">Afa oya make we run the level</span>
+    </div>
+     </div>
+     
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/grind.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name5">+234 701 168 9860</span><span class="font-size1">10:00 AM</span><br>
+      <span><img class="chat-check" src="resources/check.png"></span>
+      <span class="font-size2">Ignore</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/1.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name6">Nathan Aj</span><span class="font-size1">11:27 AM</span><br>
+      <span class="chat6 font-size2">wait i dey come</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/2.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name7">Trust</span><span class="font-size1">11:27 AM</span><br>
+      <span class="chat7 font-size2">buy 2 pack</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+      <div class="inline absolute"><img class="chat-img" src="resources/1.jpg"></div>
+      <div class="inline">
+        <span class="bold chat-name2">The Boys Comm</span><span class="font-size1">11:27 AM</span><br>
+        <span class="chat2 font-size2">bigge:hope una active...</span>
+        <span><img class="mute" src="resources/bell.png"></span>
+        <span class="unread">1</span>
+      </div>
+       </div>
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/3.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name8">Kynetic</span><span class="font-size1">11:15 AM</span><br>
+      <span class="chat8 font-size2">are you done with your work</span>
+    </div>
+     </div>
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/grind.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name9">Nathan Aj</span><span class="font-size1">10:27 AM</span><br>
+      <span class="chat9 font-size2">wait i dey come</span>
+    </div>
+     </div>
+     <div class="chat-box">
+      <div class="inline absolute"><img class="chat-img" src="resources/1.jpg"></div>
+      <div class="inline">
+        <span class="bold chat-name9">Nathan Aj</span><span class="font-size1">10:00 AM</span><br>
+        <span class="chat9 font-size2">wait i dey come</span>
+      </div>
+       </div>
+       <div class="chat-box">
+        <div class="inline absolute"><img class="chat-img" src="resources/2.jpg"></div>
+        <div class="inline">
+          <span class="bold chat-name9">Nathan Aj</span><span class="font-size1">11:27 AM</span><br>
+          <span class="chat9 font-size2">wait i dey come</span>
+        </div>
+         </div>
+         <div class="chat-box">
+          <div class="inline absolute"><img class="chat-img" src="resources/3.jpg"></div>
+          <div class="inline">
+            <span class="bold chat-name9">Nathan Aj</span><span class="font-size1">11:27 AM</span><br>
+            <span class="chat9 font-size2">wait i dey come</span>
+          </div>
+           </div>
+           <div class="chat-box">
+            <div class="inline absolute"><img class="chat-img" src="resources/grind.jpg"></div>
+            <div class="inline">
+              <span class="bold chat-name9">Nathan Aj</span><span class="font-size1">11:15 AM</span><br>
+              <span class="chat9 font-size2">wait i dey come</span>
+            </div>
+             </div>
+             <div class="chat-box">
+              <div class="inline absolute"><img class="chat-img" src="resources/1.jpg"></div>
+              <div class="inline">
+                <span class="bold chat-name9">Nathan Aj</span><span class="font-size1">10:27 AM</span><br>
+                <span class="chat9 font-size2">wait i dey come</span>
+              </div>
+               </div>
+
+
+     <div class="chat-box">
+    <div class="inline absolute"><img class="chat-img" src="resources/2.jpg"></div>
+    <div class="inline">
+      <span class="bold chat-name10">Nathan Aj</span><span class="font-size1">10:00 AM</span><br>
+      <span class="chat10 font-size2">wait i dey come</span>
+      <span class="unread">1</span>
+    </div>
+     </div>
+
+</section>
+
+            <!-- +chat -->
+
+	<div id="newchat">
+	   <img src="resources/comment.png" width="25px">
+	</div>
+
+                  <!-- footer -->
+
+  <div id="footer">
+    <div class="inline">
+	<div  class="inline"><img src="resources/message.png" width="20px"></div>
+	<div class="footer-details">Chats</div>
+    </div>
+    <div class="footer-boxes inline">
+	<div class="inline"><img src="resources/telephone.png" width="20px"></div>
+	<div class="footer-details">Calls</div>
+    </div>
+    <div class="footer-boxes inline">
+	<div class="inline"><img src="resources/updates.png" width="20px"></div>
+	<div class="footer-details">Updates</div>
+    </div>
+    <di class="footer-boxes inline">
+	<div class="inline"><img src="resources/toolbox.png" width="20px"></div>
+	<div class="footer-details">Tools</div>
+    </div>
+</div>
+
+ </main>
+</body>
+</html>

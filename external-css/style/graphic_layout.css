@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    font-size: 13px;
+}
+#main{
+    height: 100vh;
+    background-image: url(../resources/linear-bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1250px;
+}
+.main-container{
+    width: 920px;
+    height: 512px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    border-radius: 10px;
+    color: white;
+}
+.left{
+    width: 250px;
+    /* background-color: pink; */
+    height: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.right{
+    /* background-color: red; */
+    width: 700px;
+    height: 512px;
+    border-radius: 10px;
+}
+
+        /* contents */
+.top-left{
+    display: flex;
+}
+.mac-logo{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #F95C5A;
+    margin: 5px;
+}
+.mac-logo:nth-child(2){background-color: yellow;}
+.mac-logo:nth-child(3){background-color: green;}
+
+ul{
+    list-style-type: none;
+}
+.left-section p{
+    padding-bottom: 8px;
+}
+.left-section span{
+    font-size: 10px;
+    margin-left: 20px
+}
+.left-section i{
+    margin-top: 3px;
+    position: absolute;
+    font-size: 13px;
+}
+.top{
+    padding: 0 20px;
+    border-bottom: 1px solid grey;
+
+}
+.top ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+    height: 35px;
+}
+.top ul li:nth-child(1){
+    border-bottom: 2px solid white;
+    padding: 5px 0 5px 0;
+}
+.top #profile{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.search{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+}
+.search i{
+    padding: 5px;
+}
+.search input{
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: white;
+}
+.search input:focus{
+    outline: none;
+}
+
+.section2{
+    display: flex;
+}
+.section2 .left{
+    background-color: transparent;
+}
+.section2 .right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 200px;
+}
+.section2 .right span:nth-child(1){
+    border-bottom: 2px solid white;
+    padding: 11px;
+}
+
+.section-3{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 700px;
+    height: 435px;
+    padding: 10px 20px;
+}
+.no1{
+    width: 660px;
+    height: 125px;
+    background: linear-gradient(to right top, #DC42E1, #FC3499, #FD5471, #FF785A, #FBD753);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.no1 img{
+    width: 100px;
+}
+.no1 .leftt{
+    width: 300px;
+}
+.no1 .title1{
+    display: flex;
+    align-items: center;
+}
+.no1 .title1 img{
+    width: 40px;
+    padding-right: 10px;
+}
+.no1 .leftt .title1 p{
+    font-size: 20px;
+}
+.no1 .leftt p{
+    font-size: 13px;
+    padding: 5px 0;
+}
+.no1 .leftt button{
+    border: none;
+    padding: 3px 20px;
+    border-radius: 20px;
+    background-color: #3E6CF5;
+    color: white;
+}
+
+.no2{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 660px;
+    height: 110px;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+.right p{
+    padding: 10px 0;
+}
+.installed{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 15px;
+
+}
+.installed ul{
+    list-style-type: disc;
+}
+.installed ul li::marker{
+    color: lightgreen;
+}
+.installed:nth-child(3) ul li::marker{
+    color: blue;
+}
+.installed .des{
+    display: flex;
+    height: 20px;
+    align-items: center;
+}
+.installed .leftt{
+    width: 150px;
+}
+.installed .rightt{
+    width: 160px;
+}
+.installed button{
+    background: none;
+    border-radius: 20px;
+    padding: 2px 15px;
+    margin: 5px;
+    border: 1px solid white;
+    color: white;
+}
+.installed:nth-child(3) .des button{
+    background-color: #3E6CF5;
+    border: none;
+}
+.downnn{
+    display: flex;
+    justify-content: space-between;
+}
+.plannedApp{
+    width: 210px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 10px 0 10px;
+    border-radius: 10px 10px 0 0;
+}
+.plannedApp .top{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    border: none;
+    padding: 0;
+}
+
+.plannedApp .top p{
+    padding-left: 10px;
+}
+.plannedApp .dess{
+    font-size: 13px;
+}
+.plannedApp .down{
+    display: flex;
+    justify-content: right;
+    height: 23px;
+    align-items: center;
+    margin-top: 10px;
+}
+.plannedApp .down button{
+    background-color: #3E6CF5;
+    padding: 4px 15px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    margin: 0 5px;
+}

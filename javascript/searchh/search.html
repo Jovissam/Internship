@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-6 offset-md-2">
+                <h1 class="text-end">36 States</h1>
+                <div class="d-flex justify-content-between my-3">
+                    <h4>10 Artists</h4>
+                    <button onclick="sortArtists()" type="button" class="btn btn-primary">sort</button>
+                </div>
+                <div class="form-floating mb-3">
+                  <input onkeyup="searchArtists(this)"
+                    type="email"
+                    class="form-control"
+                    id="input1"
+                    placeholder="name@example.com"
+                  />
+                  <label for="input1">search</label>
+                </div>
+                <ul class="list-group" id="artistlists">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="search.js"></script>
+</body>
+</html>

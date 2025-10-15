@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="avalue" />
+    <input type="text" id="bvalue" />
+    <input type="text" id="cvalue" />
+
+    <button id="solve">SOLVE</button>
+
+    <script>
+      function solve() {
+        const aValue = document.querySelector("#avalue").value;
+        const bValue = document.querySelector("#bvalue").value;
+        const cValue = document.querySelector("#cvalue").value;
+
+        let root = Math.sqrt(bValue ** 2 - (4 * aValue * cValue));
+
+        let result11 = -bValue + root / (2 * aValue);
+
+        let result2 = -bValue - root / (2 * aValue);
+
+        console.log(result11, "or", result2);
+      }
+      // solve()
+      const solver = document.querySelector("#solve");
+      solver.addEventListener("click", solve);
+    </script>
+  </body>
+</html>

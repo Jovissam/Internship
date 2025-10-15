@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+</head>
+
+<body> 
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4">
+                <h1>Note App</h1>
+                <ul class="list-group" id="noteList">
+
+                </ul>
+                <div class="mt-5">
+                    <button onclick="showForm(this)" class="btn btn-outline-primary w-100">Add Note</button>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <div class="alert alert-warning d-none" id="errorMessage" role="alert">
+                </div>
+                <div class="mt-5 d-none" id="noteView">
+
+                </div>
+                <div id="noteForm" class="mt-5 shadow-lg p-4 d-none">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Title</label>
+                            <input type="text" id="noteTitle" class="form-control" placeholder=""
+                                aria-describedby="helpId">
+                        </div>
+                        <div class="form-group my-2">
+                            <label for="">Note</label>
+                            <textarea id="noteContent" class="form-control" id=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary">
+                            SAVE
+                        </button>
+                        <button type="reset" class="btn btn-outline-warning">Reset</button>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- <button onclick="navigateToPage()">Change page</button> -->
+        </div>
+    </div>
+
+
+    <script src="note.js"></script>
+</body>
+
+</html>

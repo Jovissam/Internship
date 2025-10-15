@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maze layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .layout{
+            position: relative;
+            width: 800px;
+            height: 550px;
+            /* background-color: aquamarine; */
+            background-image: url(layout2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            margin: 0 auto;
+        }
+        .layout img{
+            position: absolute;
+            width: 25px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="layout" class="layout">
+        <img id="car" src="car1.png" alt="">
+    </div>
+
+
+
+    <script>
+        const car = document.getElementById("car")
+        const layout = document.getElementById("layout")
+        const warning = "Out of bounds";
+
+        function x_movement(x_move) {
+            car.style.right = `${x_move}px`
+        }
+        function y_movement(y_move) {
+            car.style.bottom = `${y_move}px`
+        }
+        function rotate(car_rotate) {
+            car.style.transform = `rotate(${car_rotate}deg)`
+        }
+        let x_move = 170;
+        let y_move = 40;
+        let car_rotate = 0;
+        x_movement(x_move);
+        y_movement(y_move);
+        rotate(car_rotate);
+
+        document.addEventListener("keydown", function (e){
+            const act = e.keyCode;
+            // console.log(act);
+            if (act == 38) {
+                y_move += 10; car_rotate = 0;
+                y_movement(y_move); rotate(car_rotate);
+                console.log(y_move);
+            }
+            if (act == 39) {
+                x_move -= 10; car_rotate = 90;
+                x_movement(x_move); rotate(car_rotate)
+                
+            }
+            if (act == 40) {
+                y_move -= 10; car_rotate = 180;
+                y_movement(y_move); rotate(car_rotate);
+            }
+            if (act == 37) {
+                x_move += 10; car_rotate = -90;
+                x_movement(x_move); rotate(car_rotate);
+            }
+            if (x_move < 160) {
+                alert(warning);
+                // layout.style.backgroundColor = "red"
+            }
+            if (x_move > 620) {
+                alert(warning);
+                // layout.style.backgroundColor = "red"
+            }
+            if (y_move  < 30 ) {
+                alert(warning)
+            }
+            if (y_move  > 470 ) {
+                alert(warning)
+            }
+        });
+        
+
+    </script>
+</body>
+</html>

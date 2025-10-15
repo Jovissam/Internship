@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>social app</title>
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .absolute{
+            position: absolute;
+        }
+        #container{
+            background-color: #DFDCE6;
+            overflow: hidden;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #container #pink{
+            background-color: violet;
+            width: 150px;
+            height: 650px;
+            margin: 70 0 0 -20px;
+            transform: rotate(75deg);
+        }
+        #container #grey{
+            background-color: #85B0C8;
+            width: 150px;
+            height: 500px;
+            margin: 180px 0 0 125px;
+            transform: rotate(75deg);
+        }
+        #container #yellow{
+            background-color: #FFC606;
+            width: 330px; border-top: 1px solid black;
+            height: 600px;
+            margin: -280px 0 0 750px;
+            transform: rotate(55deg);
+        } 
+        #phones{
+            position: absolute;
+            margin: 50px 200px;
+        }
+        .phone{
+            width: 270px;
+            height: 500px;
+            background-color: pink;
+            border: 5px solid black;
+            border-radius: 25px;
+            overflow: hidden;
+            display: inline-block;
+            margin: 0 30px;
+            position: relative;
+        }
+        #one{
+            background-color: #969AB5;
+        }
+        #two{
+            background-color: #1E0B2D;
+            color: white;
+        }
+        .status-top{
+            padding: 5px 0;
+            font-size: 10px;
+            background-color: white;
+        }
+        .time{
+            margin: 0 150px 0 20px;
+        }
+        .updates{
+            background-color: white;
+            height: 90px;
+            width: 260px;
+            padding-top: 5px;
+            border-radius: 0 0 0 50px;
+            border-bottom: 1px solid grey;
+            position: absolute;
+            z-index: 3;
+        }
+        #update2{background-color: #1F0B2E;
+            color: white;
+        }
+        .fa-arrow-left{
+            padding: 0 200px 0 10px;
+        }
+        .updates h2{
+            margin: 15px 0 0 50px;
+        }
+        .about{
+            background-color: white;
+            width: 261px;
+            border-radius: 0 0 0 50px;
+            position: absolute;
+            z-index: 2;
+            padding: 100px 10px 0 25px;
+            font-size: 10px;
+        }
+        #about2{
+            height: 240px;
+        } 
+        #tape{
+            background-image: url(recources/tape.png); background-repeat: no-repeat;
+            background-position: 50%;
+            background-color: #FFC921;
+            width: 220px;
+            height: 60px;
+            border-radius: 0 25px 0 25px;
+            margin-top: 10px
+
+        }
+        .pfp{
+            width: 25px; height: 25px;
+            border-radius: 100%;
+            position: absolute;
+        }
+        .name{
+            margin-left: 35px;
+        }
+        #about2 .name{
+            color: black;
+        }
+        .nam{
+            font-weight: bold;
+            font-size: 13px;
+            padding-right: 90px;
+
+        }
+        .text{
+            padding-top: 10px;
+            color: grey;
+        }
+        .com{
+            text-align: right;
+            margin-top: 10px;
+        }
+        .comm{
+            text-align: right;
+            margin-top: 60px;
+            padding-right: 10px;
+        }
+        .fa-comment-alt{
+            margin-right: 10px;
+        }
+            
+        .classes{
+        background-color: #1F0B2E;
+        height: 200px;
+        width: 262px;
+        border-radius: 0 0 0 50px;
+        position: absolute;
+        top: 190px;
+        z-index: 1;
+        }
+        #classes2{
+            background-image: url(recources/pool.jpg); background-size: cover;
+            padding: 90px 0 0 20px;
+            color: white;
+            font-size: 10px;
+        }
+        .about2{
+            background-color: #969AB5;
+            width: 261px;
+            height: 155px;
+            top: 340px;
+            position: absolute;
+            border-radius: 0 0 25px 25px;
+            font-size: 10px;
+            padding: 60px 10px 0 20px;
+        }
+        #about-purple{
+            background-color: #1F0B2E;
+            color: white;
+        }
+        .class{
+            background-color: #EF99A1;
+            width: 90px;
+            height: 110px;
+            margin: 75px 0 0 20px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .classes #girl{
+            background-image: url(recources/girl.png);
+            background-size: cover;
+            background-position: 60%;
+        }
+        .classes #man{
+            background-image: url(recources/man.png);
+            background-size: cover;
+            background-position: 60%;
+            background-color: #8EBBD0;
+        }
+        #class3{
+            width: 10px;
+            border-radius: 20px 0 0 20px;
+            background-color: #339298;
+        }
+        button{
+            padding: 10px 20px;
+            border: none;
+            border-radius: 100%;
+            background-color:white;
+            position: fixed;
+            z-index: 100;
+            font-size: 30px;
+            margin: 390px 0 0 190px;
+        }
+        .swipe{
+            background-color: gray;
+            width: 100px;
+            height: 2px;
+            position: absolute;
+            z-index: 100;
+            margin: 460px 0 0 85px;
+        }
+    </style>
+</head>
+<body>
+    <main id="container">
+        <div class="absolute" id="pink"></div>
+        <div class="absolute" id="grey"></div>
+        <div class="absolute" id="yellow"></div>
+        <div id="phones" class="absolute" >
+            <div id="one" class="phone">
+                <div class="status-top">
+                    <span class="time">9:41</span>
+                    <span>
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </span>
+                </div>
+                <div class="updates">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-search"></i>
+                    <h2>Updates</h2>
+                </div>
+                <div class="about">
+                    <img class="pfp" src="recources/me.jpeg" alt="">
+                    <p class="name"> <span class="nam">Marie Carter</span>
+                        <i class="fas fa-angle-down"></i><br>
+                        8 NOV
+                    </p>
+                    <p class="text">
+                        When i was 5 years old, my mother always told me that happiness was the key to life. When i went to school, they asked me what i wanted to be when i grow up
+                    </p>
+                    <div class="com">
+                        256 <i class="far fa-comment-alt"></i>
+                        428 <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="classes">
+                    <div id="girl" class="class"></div>
+
+                    <div id="man" class="class"></div>
+                    
+                    <div id="class3" class="class"></div>
+                </div>
+                <div class="about2">
+                    <img class="pfp" src="recources/me.jpeg" alt="">
+                    <p class="name"> <span class="nam">Marie Carter</span>
+                        <i class="fas fa-angle-down"></i><br>
+                        8 NOV
+                    </p>
+                    <p class="text">
+                        When i was 5 years old, my mother always told me that happiness was the key to life. When i went to school, they asked me what i
+                    </p>
+                </div>
+                <button>&plus;</button>
+                <div class="swipe"></div>
+            </div>
+
+
+
+            <div id="two" class="phone">
+                <div id="two" class="status-top">
+                    <span class="time">9:41</span>
+                    <span>
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-wifi"></i>
+                        <i class="fas fa-battery-full"></i>
+                    </span>
+                </div>
+                <div id="update2" class="updates">
+                    <i class="fas fa-arrow-left"></i>
+                    <i class="fas fa-filter    "></i>
+                    <h2>Updates</h2>
+                </div>
+                <div id="about2" class="about">
+                    <img class="pfp" src="recources/me.jpeg" alt="">
+                    <p class="name"> <span class="nam">Marie Carter</span>
+                        <i class="fas fa-angle-down"></i><br>
+                        8 NOV
+                    </p>
+                    <p class="text">
+                       Back in the days, still love to use these today!
+                    </p>
+                    <div id="tape"></div>
+                </div>
+                <div id="classes2" class="classes">
+                    <img class="pfp" src="recources/me.jpeg" alt="">
+                    <p class="name"> <span class="nam">Marie Carter</span>
+                        <i class="fas fa-angle-down"></i><br>
+                        8 NOV
+                    </p>
+                    <div class="comm">
+                        256 <i class="far fa-comment-alt"></i>
+                        428 <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div id="about-purple" class="about2">
+                    <img class="pfp" src="recources/me.jpeg" alt="">
+                    <p class="name"> <span class="nam">Marie Carter</span>
+                        <i class="fas fa-angle-down"></i><br>
+                        8 NOV
+                    </p>
+                    <p class="text">
+                        When i was 5 years old, my mother always told me that happiness was the key to life. When i went to school, they asked me what i
+                    </p>
+                </div>
+                <button>&plus;</button>
+                <div class="swipe"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

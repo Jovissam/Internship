@@ -1,0 +1,118 @@
+types of loops 
+
+        for loop: Runs a block of code a specific number of times.
+                for (let i = 0; i < 5; i++) {
+                  console.log(i);
+                }
+
+
+        while loop: Repeats as long as a condition is true.
+                let i = 0;
+                while (i < 5) {
+                  console.log(i);
+                  i++;
+                }
+
+
+        do while loop: Runs the code once, then repeats as long as the condition is true.
+                let i = 0;
+                do {
+                  console.log(i);
+                  i++;
+                } while (i < 5);
+
+
+        for in loop: Loops through keys in an object.
+                let person = { name: "John", age: 30 };
+                for (let key in person) {
+                  console.log(key + ": " + person[key]);
+                }
+
+        
+        foreach loop:  is a method used specifically with arrays in JavaScript to execute a function once for each array element.
+                const numbers = [1, 2, 3, 4, 5];
+
+                numbers.forEach(function(number) {
+                  console.log(number);
+                });
+
+
+
+conditional statements in javascript.
+        if statement: Runs code if the condition is true.
+
+        else statement: Runs one block if true, another if false.
+
+        else if statement: For multiple conditions.
+
+
+LOGICAL OPERATORS.
+        && (AND): Returns true only if both conditions are true.
+
+         || (OR): Returns true if at least one condition is true.
+
+         ! (NOT): Reverses a boolean value.
+
+ASSIGNMENT OPERATORS.
+        =: Assigns a value.(let x = 5;)
+
+        +=: Adds and assigns.(x += 3; // same as x = x + 3)
+
+       -=: Subtracts and assigns.(x -= 2; // same as x = x - 2)
+
+       *=: Multiplies and assigns.(x *= 4; // same as x = x * 4)
+
+       /=: Divides and assigns. (x /= 2; // same as x = x / 2)
+
+       %=: Modulus and assigns.(x %= 3; // same as x = x % 3)
+
+EVENTS IN JS
+        Events are assinged or are part of the list of properties
+
+
+FUNCTIONS IN JavaScript 
+        A function is a reusable block of code designed to perform a task.
+        You define it once, and use (call) it whenever needed.
+
+ARRAY METHODS
+
+        Iteration & Transformation;
+
+                .forEach(): Executes a function on each array element (no return).
+                .map(): Transforms each element and returns a new array.
+                .filter(): Returns a new array with elements that pass a test.
+                .reduce(): Reduces array to a single value (e.g., sum).
+                .find(): Returns first element that passes a test.
+                .findIndex(): Returns index of the first matching element.
+                .some(): Returns true if any element passes a test.
+                .every(): Returns true if all elements pass a test.
+
+         Modification (changes original array);
+
+                .push(): Adds item(s) to the end.
+                .pop(): Removes the last item.
+                .shift(): Removes the first item.
+                .unshift(): Adds item(s) to the start.
+                .splice(): Adds/removes/replaces items at a position.
+                .sort(): Sorts the array in place.
+                .reverse(): Reverses the order in place.
+                .fill(): Fills all or part of an array with a static value.
+                .copyWithin(): Copies part of the array to another position in place.
+
+        🔎 Access & Inspection;
+
+                .includes(): Checks if array contains a value.
+                .indexOf(): First index of a value, or -1.
+                .lastIndexOf(): Last index of a value.
+                .at(): Access element by position (supports negative indexes).
+                .join(): Joins elements into a string.
+                .toString(): Converts array to string.
+
+        📋 Utility
+
+                .concat(): Combines arrays into a new one
+                .flat(): Flattens nested arrays.
+                .flatMap(): Maps and flattens one level deep.
+                .from(): Converts array-like or iterable to array.
+                .isArray(): Checks if a value is an array.
+                .slice(): Returns a shallow copy of a portion.

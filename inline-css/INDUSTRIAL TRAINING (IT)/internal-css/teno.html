@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<title>teneo.comm</title>
+	<style>
+		#main{
+			margin:auto; width:376px; min-height:500px; overflow:hidden; background-color:#F9FBFA
+		}
+		#header{
+			background-color:#D3E5E5; width:100%; height:30px; padding:15px 15px;
+		}
+		.headspan1{
+			display:inline
+		}
+		small{
+			font-size:12px; margin:0 130px 25px 0; position: absolute; padding-top:7px
+		}
+		.logo{
+			height: 25px; position: absolute; padding: 0 0 0 160px;
+		}
+		.headspan2{
+			padding-top:10; position: absolute; margin-left:190px
+		}
+		.a1{
+			text-decoration:none; color:black
+		}
+					/* status */
+		#status{
+			text-align:center; margin:10px 0;
+		}
+		#status-details{
+			color:red; font-size:12px; background-color:#F0F4F5; padding:5px 25px; border-radius:20px
+		}
+		#stats{
+			background-color:red; width:10px; height:10px; position:absolute; border-radius:100%; margin:7px 0 0 132px
+		}
+				/* blance */
+		.balance{
+			background-color:#F3F4F6; width:155px; padding:10px;margin-left:10px; display:inline-block
+		}
+		.balance2{
+			background-color:#F3F4F6; width:155px; padding:10px;margin-left:5px; display:inline-block
+		}
+		.balance-details{
+			font-size:14px
+		}
+		.icon{
+			padding-left:10px
+		}
+		.amount{
+			font-size:25px; padding-top:5px
+		}
+
+		.heart-status{
+			border:1px solid gray; border-radius:6px; margin:8px 10px
+		}
+		.point{
+			padding:5px 10px; width:337px; font-size:14px;
+		}
+		.num1{
+			padding-left:180px
+		}
+		.num2{
+			padding-left:190px
+		}
+		hr{
+			margin:0 auto; width:330px
+		}
+		p{
+			text-align: center;
+		}
+		.btn1, .btn2{
+			width:357px; margin:6px 10px; text-align:center; padding:10px 0; border-radius:6px; color:white
+		}
+		.btn1{
+			background-color:#0C4CF5;
+		}
+		.btn2{
+			background-color:black
+		}
+		.btnimg{
+			position:absolute
+		}
+		.btn3{
+			width:240px; margin:auto; text-align:center; padding:10px 0; border:1px solid grey; border-radius:6px
+		}
+
+				/* footer */
+
+		#footer-container{
+			border:1px solid grey;  margin-top:10px; width:100%
+		}
+		.left-footer{
+			background-color:#3A7FF0; width:49%; display:inline-block; padding:0 0 4px 0; border:none
+		}
+		.left-footer-main{
+			background-color:white; padding:15px 0;
+		}
+		.left-footer-details{
+			text-decoration:none; color:black; padding-left:85px
+		}
+		.right-footer{
+			background-color:#F3F4F6; padding:15px 0 19px 0; width:49.7%; display:inline-block;
+		}
+		.right-footer-details{
+			text-decoration:none; color:black; padding-left:75px
+		}
+		.footer-image, .footer-image2{
+			width:20px; position:absolute;
+		}
+		.footer-image{
+			padding-left:60px; margin-top:0px
+		}
+		.footer-image2{
+			padding-left:50px; margin-top:1px;
+		}
+	</style>
+   </head>
+<body style="font-family:'segoe ui'">
+			<!-- header -->
+   <main id="main">
+	<header id="header">
+	   <span class="headspan1"><img src="recources/download.svg" height="25px">
+	     <small>&nbspBETA</small></span>
+
+	   <img class="logo" src="recources/svg.svg">
+	   <span class="headspan2"><a class="a1" href="">Log out</a></span>	
+	</header>
+
+				<!-- not connected -->
+	<div id="status">
+	   <span id="status-details">
+	      <div id="stats">&nbsp;</div>
+	      <span>Not connected</span>
+	   </span>
+	</div>
+
+						<!-- main -->
+
+	<div class="balance">
+	 <div class="balance-details">Teneo points today 
+		<span class="icon"><img src="recources/star.svg" width="15px"></span>
+	 </div>
+	 <div class="amount">300</div>
+	</div>	   
+	<div class="balance2">
+	 <div class="balance-details">Teneo points today 
+		<span class="icon"><img src="recources/star.svg" width="15px"></span>
+	 </div>
+	 <div class="amount">136,875</div>
+	</div>
+
+	<div class="heart-status">
+	 <div class="point">Potential next point<span class="num1">0.00</span></div>
+		<hr>
+	 <div class="point">Next heartbeat<span class="num2">15m 0s</span></div>
+	</div>
+
+	<p>Connect your Node to start earning rewards</p>
+
+	<div class="btn1">
+	   Connect Node</div>
+
+	<div class="btn2">Go to Dashboard
+	&nbsp;<img class="btnimg" src="recources/up.svg"></div>
+
+	<div class="btn3">Share Refferal Code
+	&nbsp;<img class="btnimg" src="recources/r.svg" width="18px"></div>
+
+				<!-- footer -->
+
+	<div id="footer-container">
+	 <div class="left-footer">
+	   <div class="left-footer-main">
+	   <img class="footer-image" src="recources/home.svg">
+	   <a class="left-footer-details" href="">Home</a></div>
+	 </div>
+	 <div class="right-footer">
+	   <img class="footer-image2" src="recources/q.svg">
+	   <a class="right-footer-details" href="">Support</a>
+	 </div>
+	</div>
+   </main>
+</body>
+</html>

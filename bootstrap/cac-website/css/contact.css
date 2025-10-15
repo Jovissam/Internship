@@ -1,0 +1,95 @@
+
+                /* header section | section 3 */
+.header{
+    background: #ffffff url(../images/blog_news_bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 450px;
+}
+.header .header-text{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+.header p{
+    color: white;
+}
+            /* title */
+.title h1{
+    font-size: 50px;
+    font-weight: 1;
+}
+                /* contact section */
+form label{
+    margin-top: 15px;
+}
+form input{
+    width: 60vw;
+    height: 55px;
+    border-radius: none;
+}
+form input:focus{
+    outline: none;
+}
+form textarea{
+    height: 150px;
+}
+form button{
+    width: 100px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border: none;
+}
+.right-form{
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.1);
+    width: 370px;
+}
+.right-form h1{
+    font-weight: 1;
+}
+.right-form .n02{
+    font-size: 16px;
+    line-height: 2;
+}
+.right-form p{
+    padding: 10px 0;
+    font-size: 23px;
+}
+.right-form i{
+    color: var(--primary-color);
+}
+.right-form .down{
+    background-color: #FCF8E3;
+    border: 1px solid #D9B917;
+    height: 160px;
+}
+.right-form .down img{
+    width: 250px;
+}
+/*       address section */
+.location{
+    min-height: 400px;
+}
+.location .left{
+    background-image: url(../images/ny_office_bg.jpg);
+    background-size: 900px;
+
+}
+.location h1{
+    color: var(--primary-color);
+}
+.location .right{   
+    background-image: url(../images/londong_office_bg.jpg);
+    background-size: 900px;
+}
+.location .left:hover,
+.location .right:hover{
+    background-size: 800px;
+    transition: 1s ease;
+}
+.location h1{
+    font-weight: 1;
+    font-size: 55px;
+}
+.location p{
+    padding: 5px;
+}

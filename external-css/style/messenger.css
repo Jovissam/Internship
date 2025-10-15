@@ -1,0 +1,242 @@
+:root{
+    --primary-color: #0078FF;
+    --secondary-color: #F03A2F;
+    --color3:#B7B7B7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.phone-box{
+    margin: 50px 40px;
+}
+.phone{
+    width: 250px;
+    min-height: 510px;
+    border: 7px solid black;
+    border-radius: 27px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+}
+.status-top{
+    font-size: 12px;
+    margin: 5px 0;
+}
+.status-top span{
+    margin-right: 140px;
+    margin-left: 10PX;
+}
+.header{
+    padding: 10px 0 7px 10px;
+}
+.header p{
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.header img{
+    width: 35px; height: 35px;
+    position: absolute;
+    border-radius: 100%;
+    margin: 3px 0 0 190px;
+}
+.socials{
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 7px 0;
+    scrollbar-width: none;
+}
+.social{
+    width: 120px;
+    border-radius: 5px;
+    height: 50px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.social:nth-child(1),
+.social:nth-child(3){
+    background-image: linear-gradient(to right, #047AF9, #269EF3, #51CAEC);
+}
+.social:nth-child(2){
+    background-image: linear-gradient(to right, #F22034, #F64E35, #FA8439);
+}
+.social-logo{
+    display: inline-block;
+    vertical-align: top;
+}
+.social-logo i{
+    padding: 7px;
+    background-color: white;
+    border-radius: 100%;
+    margin:10px 0 0 8px;
+}
+.social-details{
+    display: inline-block;
+    padding-top: 6px;
+    color: white;
+}
+.social-details p:nth-child(1){
+    font-size: 11px;
+    font-weight: bold;
+}
+.social-details p:nth-child(2){
+    font-size: 6px;
+}
+.social-details span{
+    font-size: 8px;
+}
+.social-details span i:nth-child(5){
+    color: rgba(0, 0, 0, 0.2);
+}
+.big{
+    height: 4px;
+    background-color: var(--color3);
+}
+.subtitle{
+    padding-top: 6px;
+    margin-left: 10px;
+}
+.description{
+    padding:7px 10px;
+}
+.description img{
+    width: 30px; height: 30px;
+    position: absolute;
+    border-radius: 5px;
+}
+.description p{
+    margin-left: 35px;
+    font-size: 12px;
+}
+.description p:nth-child(2){
+    font-weight: bold;
+    padding-top: 3px;
+}
+.items{
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 5px 0;
+    scrollbar-width: none;
+    border-bottom: 1px solid gray;
+}
+.items .box{
+    width: 90px;
+    height: 90px;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.items #box-1{background-image: url(../resources/woman1.png);}
+    .items #box-2{
+    background-image: url(../resources/woman2.png);
+    background-color: #F1C11D;
+}
+.items #box-5{background-image: url(../resources/woman3.jpeg);}
+.items #box-6{background-image: url(../resources/woman4.jpeg);}
+
+nav{
+    color: var(--color3);
+    padding: 5px;
+}
+nav i{
+    padding-left: 24px;
+}
+nav i:hover{
+    color: var(--primary-color);
+}
+nav span{
+    color: var(--primary-color);
+}
+#swipe{
+    width: 70px;
+    margin: 3px auto;
+    height: 2px;
+    background-color: black;
+    border-radius: 7px;
+}
+
+
+/* phone right */
+h5{
+    padding-left: 10px;
+}
+.recent-chats{
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scrollbar-width: none;
+    padding: 5px 0;
+}
+.recent-chats .profile{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 50px;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+.recent-chats #profile-1{background-image: url(../resources/man1.jpeg);}
+.recent-chats #profile-2{background-image: url(../resources/man2.jpeg);}
+.chat{
+    padding:7px 0;
+    margin-left: 10px;
+    border-bottom: 1px solid var(--color3);
+}
+.chat .chat-img{
+    width: 35px; height: 35px;
+    position: absolute;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+}
+.chat #chat-1{background-image: url(../resources/man3.jpeg);}
+.chat #chat-2{background-image: url(../resources/man1.jpeg);}
+.chat #chat-3{background-image: url(../resources/man2.jpeg);}
+.chat #chat-4{background-image: url(../resources/woman4.jpeg);}
+.chat p{
+    margin-left: 40px;
+    font-size: 12px;
+}
+.chat p:nth-child(2){
+    font-weight: bold;
+    padding-top: 3px;
+    font-size: 13px;
+}
+.chat p:nth-child(2) small{
+    margin-left: 50px;
+    font-size: 8px;
+}
+.chat p:nth-child(3){
+    color: var(--color3);
+}
+
+.apply-change{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.apply-change span{
+    background-image: linear-gradient(to right, #047AF9, #269EF3, #51CAEC);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}

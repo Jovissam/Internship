@@ -1,0 +1,54 @@
+
+.absolute{
+    position: absolute;
+}
+.triangle {
+  border-right: 500px solid transparent;
+  border-bottom: 300px solid green;
+  position: relative;
+}
+.display-params{
+    height: 60vh;
+}
+.a1{
+    top: -35px;
+    left: -10px;
+}
+.b1{
+    left: 490px;
+    top: 300px;
+}
+.c1{
+    top: 300px;
+    left: -10px;
+}
+#output-1{
+    top: 150px;
+    left: -15px;
+    /* transform: rotate(-100deg); */
+}
+#output-2{
+    top: 300px;
+    left: 200px;
+}
+#output-3{
+    left: 230px;
+    top: 110px;
+}
+@media screen and (max-width: 568px) {
+    .triangle {
+        border-right: 300px solid transparent;
+         border-bottom: 300px solid green;
+        position: relative;
+    }
+    .b1{
+        left: 290px;
+    }
+    #output-2{
+        left: 120px;
+    }
+    #output-3{
+    left: 130px;
+    top: 110px;
+    }
+}

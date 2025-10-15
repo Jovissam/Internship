@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 270px;
+    height: 470px;
+}
+#categories{
+    height: 40px;
+}
+.big-box{
+    height: 100px;
+    width: 46%;
+}
+.downn{
+    height: 50px;
+}

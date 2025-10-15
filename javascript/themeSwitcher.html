@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>themeSwitcher</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <style>
+        #main {
+            width: 100vw;
+            height: 100vw;
+            /* background-color: blue; */
+        }
+
+        .darkTheme {
+            background-color: red;
+        }
+
+        .lightTheme {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main" class="">
+        <button id="toogleBtn">switch thme</button>
+
+        <input id="inputKey" type="text">
+        <input id="inputValue" type="text">
+        <button id="addvalue">add</button>
+
+        <div id="display"></div>
+    </main>
+
+
+    <script>
+        const toogleBtn = document.getElementById("toogleBtn")
+        const main = document.getElementById("main");
+
+        const loadTheme = localStorage.getItem("theme") || "lightTheme"; // checks for the theme inside the local storage if the local storage is empty it will dispay light theme
+        main.classList.add(loadTheme); 
+        
+        
+        toogleBtn.addEventListener("click", function () {
+            main.classList.toggle("darkTheme");
+            main.classList.toggle("lightTheme");
+            
+
+            // storing our theme state into local storage
+            let currentTheme;        // checks if main has the class "darktheme" if its thee it shound display else it should display light theme
+            if (main.classList.contains("darkTheme")) {
+                currentTheme = "darkTheme"
+            } else {
+                currentTheme = "lightTheme" 
+            }
+            localStorage.setItem("theme", currentTheme) // it should store the currenttheme into local storage
+        });
+
+
+        // localStorage.clear()
+
+
+    </script>
+</body>
+
+</html>

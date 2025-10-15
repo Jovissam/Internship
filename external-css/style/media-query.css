@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    padding: 20px 0;
+}
+.container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (width:375px){
+    .no1{
+        display: flex;
+    }
+}
+
+@media only screen and (width:414px){
+    .no2{
+        display: flex;
+    }
+}
+@media only screen and (width:390px){
+    .no3{
+        display: block;
+    }
+}
+@media only screen and (width:430px){
+    .no4{
+        display: block;
+    }
+}
+
+@media only screen and (width:412px){
+    .no5{
+        display: block;
+    }
+}
+@media only screen and (width:360px){
+    .no6{
+        display: block;
+    }
+}
+
+@media only screen and (width:412px){
+    .no7{
+        display: block;
+    }
+}
+
+@media only screen and (width:768px){
+    .no8{
+        display: block;
+    }
+}
+
+@media only screen and (width:820px){
+    .no9{
+        display: block;
+    }
+}
+
+@media only screen and (width:1024px){
+    .no10{
+        display: flex;
+    }
+}
+
+@media only screen and (width:912px){
+    .no11{
+        display: block;
+    }
+}
+
+@media only screen and (width:540px){
+    .no12{
+        display: block;
+    }
+}
+
+@media only screen and (width:344px){
+    .no13{
+        display: block;
+    }
+}
+
+@media only screen and (width:854px){
+    .no14{
+        display: flex;
+    }
+}
+
+@media only screen and (width:412px){
+    .no15{
+        display: block;
+    }
+}
+
+
+@media only screen and (width:1280px){
+    .no17{
+        display: block;
+    }
+}
